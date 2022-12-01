@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
 
                         // 計算するボタン
                         Button(
-                            onClick = { /*TODO*/ },
+                            onClick = { viewModel.calculateBMI() },
                             modifier = Modifier.fillMaxWidth(),
                             colors = ButtonDefaults.buttonColors(
                                 backgroundColor = Color(0xFF7DAF43)
@@ -82,7 +82,7 @@ class MainActivity : ComponentActivity() {
 
                         // 計算結果表示
                         Text(
-                            text = "あなたのBMIは00.0です",
+                            text = "あなたのBMIは${viewModel.bmi}です",
                             modifier = Modifier.fillMaxWidth(),
                             textAlign = TextAlign.Center,
                             color = Color.Gray,
