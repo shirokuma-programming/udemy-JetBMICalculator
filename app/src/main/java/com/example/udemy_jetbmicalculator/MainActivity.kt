@@ -1,7 +1,6 @@
 package com.example.udemy_jetbmicalculator
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
@@ -17,7 +16,6 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.ViewModel
 import com.example.udemy_jetbmicalculator.ui.theme.UdemyJetBMICalculatorTheme
 
 class MainActivity : ComponentActivity() {
@@ -120,6 +118,7 @@ fun SingleLineTextField(
             ),
             singleLine = true,
             value = value,
-            onValueChange = onValueChange)
+            onValueChange = onValueChange
+        )
     }
 }
